@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		356BE7492A39D994006F678F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356BE7482A39D994006F678F /* AppDelegate.swift */; };
 		356BE74B2A39D994006F678F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356BE74A2A39D994006F678F /* SceneDelegate.swift */; };
-		356BE74D2A39D994006F678F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356BE74C2A39D994006F678F /* ViewController.swift */; };
 		356BE7502A39D994006F678F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356BE74E2A39D994006F678F /* Main.storyboard */; };
 		356BE7532A39D994006F678F /* ToDoCoreApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 356BE7512A39D994006F678F /* ToDoCoreApp.xcdatamodeld */; };
 		356BE7552A39D996006F678F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 356BE7542A39D996006F678F /* Assets.xcassets */; };
 		356BE7582A39D996006F678F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356BE7562A39D996006F678F /* LaunchScreen.storyboard */; };
+		356BE7602A39DA61006F678F /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356BE75F2A39DA61006F678F /* TasksViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		356BE7452A39D994006F678F /* ToDoCoreApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoCoreApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		356BE7482A39D994006F678F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		356BE74A2A39D994006F678F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		356BE74C2A39D994006F678F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		356BE74F2A39D994006F678F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		356BE7522A39D994006F678F /* ToDoCoreApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoCoreApp.xcdatamodel; sourceTree = "<group>"; };
 		356BE7542A39D996006F678F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		356BE7572A39D996006F678F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		356BE7592A39D996006F678F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		356BE75F2A39DA61006F678F /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			children = (
 				356BE7482A39D994006F678F /* AppDelegate.swift */,
 				356BE74A2A39D994006F678F /* SceneDelegate.swift */,
-				356BE74C2A39D994006F678F /* ViewController.swift */,
+				356BE75F2A39DA61006F678F /* TasksViewController.swift */,
 				356BE74E2A39D994006F678F /* Main.storyboard */,
 				356BE7542A39D996006F678F /* Assets.xcassets */,
 				356BE7562A39D996006F678F /* LaunchScreen.storyboard */,
@@ -142,7 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				356BE7532A39D994006F678F /* ToDoCoreApp.xcdatamodeld in Sources */,
-				356BE74D2A39D994006F678F /* ViewController.swift in Sources */,
+				356BE7602A39DA61006F678F /* TasksViewController.swift in Sources */,
 				356BE7492A39D994006F678F /* AppDelegate.swift in Sources */,
 				356BE74B2A39D994006F678F /* SceneDelegate.swift in Sources */,
 			);
@@ -306,9 +306,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kz.zaki.ToDoCoreApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,9 +337,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kz.zaki.ToDoCoreApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
